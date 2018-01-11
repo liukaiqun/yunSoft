@@ -1,0 +1,244 @@
+*{
+	margin:0;
+	padding:0px;
+	/*background: #fff;*/
+	font-size:14px;
+	color:#333;
+}
+ul,li,ol{
+	list-style: none;
+}
+.clear{
+	clear:both;
+}
+input{
+	appearance: 0;
+	-webkit-appearance: 0;
+	-moz-appearance: 0;
+}
+
+/*tab切换效果*/
+.bs-example{
+	padding:0 30px;
+}
+.nav-tabs{
+	margin-bottom:20px;
+}
+.nav-tabs>li>a{
+	font-size:16px;
+	color:#666;
+}
+.nav-tabs>li.active>a{
+	color:#323232;
+	font-weight:bold;
+}
+
+
+
+/*内容*/
+.flInfo{
+	width:98%;
+	margin:0 auto 15px;
+	border:solid #e5e5e5 1px;
+}
+.flInfo .flInfoTit{
+	background: #f5f5f5;
+	height:35px;
+	line-height: 35px;
+	border-bottom:solid #e5e5e5 1px;
+}
+.flInfo .flInfoTit span{
+	font-size:16px;
+	color:#666;
+	padding-left: 15px;
+}
+
+.flInfo .flInfoBut{
+	background: #f5f5f5;
+	height:48px;
+}
+.flInfo .flInfoBut button{
+	float:right;
+	width: 60px;
+	background:#3499dd;
+	border:0;
+	height: 27px;
+	line-height: 27px;
+	color:#fff;
+	text-align: center;
+	margin-right: 10px;
+	margin-top:10px;
+	border-radius: 0px;
+}
+.flInfo .flInfoBut button span{
+	color:#fff;
+	font-size: 14px;
+	margin-right: 5px;
+}
+
+.flInfo .flInfoCon{
+	margin-top:10px;
+}
+.flInfo .flInfoCon .flInfoConList{
+	padding:10px;
+}
+.flInfo .flInfoCon .flInfoConList .flInfoConListText{
+	float: left;
+	width:49%;
+	height: 28px;
+	line-height: 28px;
+	margin-bottom: 12px;
+}
+.flInfo .flInfoCon .flInfoConList  .flInfoConListText2{
+	width:100%;
+	height:45px;
+}
+.flInfo .flInfoCon .flInfoConList  .flInfoConListText3{
+	width:100%;
+}
+.flInfo .flInfoCon .flInfoConList  .flInfoConListText3 .flInput{
+	position: relative;
+}
+.flInfo .flInfoCon .flInfoConList  .flInfoConListText3 .flInput input{
+	opacity: 0;
+	width:100px;
+	height: 27px;
+	position: absolute;
+	left: 0;
+	top:0;
+	z-index: 1;
+}
+.flInfo .flInfoCon .flInfoConList  .flInfoConListText3 .flInput .dwImg .downloadImg{
+	float: left;
+	width:100px;
+	height: 27px;
+	text-align: center;
+	border:solid #dedddd 1px;
+	margin-right: 13px;
+}
+.flInfo .flInfoCon .flInfoConList  .flInfoConListText3 .flInput .dwImg .downloadImg font{
+	color: #545454;
+	font-size: 14px;
+}
+.flInfo .flInfoCon .flInfoConList  .flInfoConListText3 .flInput .dwImg .downloadImg span{
+	color: #545454;
+	font-size: 14px;
+	margin-right: 3px;
+}
+.flInfo .flInfoCon .flInfoConList  .flInfoConListText3 .flInput .dwImg .photoImg{
+	float: left;
+	height: 27px;
+	text-align: center;
+}
+.flInfo .flInfoCon .flInfoConList  .flInfoConListText3 .flInput .dwImg .photoImg font{
+	color: #3578b1;
+	font-size: 12px;
+}
+.flInfo .flInfoCon .flInfoConList  .flInfoConListText3 .flInput .dwImg .photoImg span{
+	color: #3578b1;
+	font-size: 14px;
+	margin-right: 3px;
+}
+.flInfo .flInfoCon .flInfoConList .flInfoConListText:nth-of-type(odd){
+	margin-right: 2%;
+}
+
+.flInfo .flInfoConListText label{
+	color:#222;
+	font-size:14px;
+	font-weight: normal;
+}
+.flInfo .flInfoConListText .form-group:after{
+
+}
+.flInfo .flInfoConListText .form-control{
+	height: 28px;
+	line-height: 28px;
+	color:#222;
+	font-size:14px;
+	border-radius: 0px;
+	padding:0px 12px;
+}
+
+/*input中placeholder默认颜色设置 start*/
+
+.form-control ::-webkit-input-placeholder{
+	color:#222;
+}
+.form-control :-moz-placeholder{
+	color:#222;
+}
+.form-control ::-moz-placeholder{
+	color:#222;
+}
+.form-control ::-ms-input-placeholder{
+	color:#222;
+}
+
+
+
+/*input中placeholder默认颜色设置  end*/
+
+.flInfo .flInfoConListText .form-control option{
+	height: 26px;
+	line-height: 26px;
+	color:#222;
+	font-size:14px;
+}
+.flInfo .flInfoConList .flInfoConListText label span{
+	color:#ff0505;
+	font-size:18px;
+	display: inline-block;
+	width:8px;
+	vertical-align: middle;
+	margin-top:5px;
+	margin-right: 3px;
+}
+.flInfo .flInfoConListText .flLabel{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.flInfo .flInfoConListText .flInput{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.flInfo .flInfoConList .flInfoConListText2 .form-control{
+	width:100.15%;
+	height: 45px;
+	float:right;
+	line-height: 18px;
+	padding:0px 10px;
+}
+.flInfo .flInfoConListText .flInput .fou{
+	height: 27px;
+	line-height: 27px;
+	width:15%;
+	text-align: center;
+	font-size: 14px;
+	color:#222;
+	border: 0;
+}
+.flInfo .flInfoConListText .flInput a{
+	display: inline-block;
+	float: right;
+	height: 14px;
+	line-height: 14px;
+	width:14px;
+	vertical-align: middle;
+	margin-top: 6px;
+	text-align: center;
+	font-size: 12px;
+	text-decoration: none;
+	border-radius: 14px;
+	border: solid #3578b1 1px;
+	color: #3578b1;
+
+}
+.flInput .bs-docs-example{
+	float:left;
+	width:70%;
+}
+.flInput a{
+	float:left;
+	width:30%;
+}

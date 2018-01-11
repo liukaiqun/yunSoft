@@ -1,0 +1,532 @@
+*{
+	margin:0;
+	padding:0px;
+	/*background: #fff;*/
+	font-size:14px;
+	color:#333;
+}
+ul,li,ol{
+	list-style: none;
+}
+.clear{
+	clear:both;
+}
+input{
+	appearance: 0;
+	-webkit-appearance: 0;
+	-moz-appearance: 0;
+}
+
+
+.header{
+	width:100%;
+	height:43px;
+	background-color: #2c5e8b;
+}
+.header .headerCon{
+	padding:0 30px;
+	background-color: #2c5e8b;
+}
+.header .headerLeft{
+	float:left;
+	height:43px;
+	background-color: #2c5e8b;
+}
+.header .headerLeft .headerLeftLogo{
+	float:left;
+	width:274px;
+}
+.header .headerLeft .headerLeftLogo img{
+	display: block;
+	margin-top:2px;
+}
+.header .headerLeft .headerLeftHome{
+	float:left;
+	margin-left:50px;
+	background-color: #2c5e8b;
+	height:43px;
+	line-height: 43px;
+}
+.header .headerLeft .headerLeftHome i{
+	display: inline-block;
+	width:17px;
+	height:17px;
+	margin-top:-5px;
+	vertical-align: middle;
+	background: url(../images/icon_host.png) no-repeat 0 center;
+}
+.header .headerLeft .headerLeftHome span{
+	font-size: 14px;
+	line-height: 17px;
+	color:#fff;
+	margin-left:5px;
+}
+.header .headerRight{
+	float:right;
+	height:43px;
+	line-height: 43px;
+}
+.header .headerRight .headerRightYewu{
+	float: left;
+	height:43px;
+	margin-right: 45px;
+}
+.header .headerRight .headerRightYewu i{
+	display: inline-block;
+	width:15px;
+	height:14px;
+	margin-top:-5px;
+	vertical-align: middle;
+	background: url(../images/icon_service.png) no-repeat 0 center;
+}
+.header .headerRight .headerRightYewu font{
+	color:#fff;
+	font-size: 12px;
+}
+.header .headerRight .headerRightYewu span{
+	display: inline-block;
+	width:9px;
+	height:5px;
+	margin-left:3px;
+	vertical-align: middle;
+	background: url(../images/arrowDown.png) no-repeat 0 center;
+}
+.header .headerRight .headerRightNav{
+	float: right;
+}
+.header .headerRight .headerRightNav li{
+	float: left;
+	width:75px;
+	position: relative;
+}
+.header .headerRight .headerRightNav li span{
+	color:#fff;
+	font-size: 12px;
+}
+.header .headerRight .headerRightNav li font{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 3px;
+	width:18px;
+	height:18px;
+	background: #f63937;
+	color:#fff;
+	font-size: 12px;
+	text-align: center;
+	line-height: 18px;
+	border-radius: 18px;
+	-moz-border-radius: 18px;
+	-webkit-border-radius: 18px;
+	position: absolute;
+	top:0;
+	right:14px;
+}
+.header .headerRight .headerRightNav li i{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+.header .headerRight .headerRightNav li i.icon-shenhe{
+	width: 16px;
+	height: 16px;
+	background: url(../images/icon_checed.png) no-repeat 0 center;
+}
+.header .headerRight .headerRightNav li i.icon-weixin{
+	width: 20px;
+	height: 16px;
+	background: url(../images/icon_wechat.png) no-repeat 0 center;
+}
+.header .headerRight .headerRightNav li i.icon-help{
+	width: 9px;
+	height: 13px;
+	background: url(../images/icon_help.png) no-repeat 0 center;
+}
+.header .headerRight .headerRightNav li i.icon-info{
+	width: 17px;
+	height: 13px;
+	background: url(../images/icon_mes.png) no-repeat 0 center;
+}
+.header .headerRight .headerRightNav li i.icon-tui{
+	width: 18px;
+	height: 17px;
+	background: url(../images/icon_exit.png) no-repeat 0 center;
+}
+
+
+/*content*/
+.content{
+	padding:0 30px;
+}
+.content .contentLeft{
+	float:left;
+	width:20%;
+	background-color: #f7f7f7;
+	margin-right: 2%;
+}
+.content .contentLeft .system{
+	width: 100%;
+	position: relative;
+}
+.content .contentLeft .system span{
+	display: inline-block;
+	height:40px;
+	line-height: 40px;
+	font-size: 16px;
+	color:#666;
+	padding-left: 30px;
+}
+.content .contentLeft .system i{
+	color:#b1b3b3;
+	font-size: 12px;
+	position: absolute;
+	right:7%;
+	top:15px;
+}
+.content .contentLeft .systemConTop{
+	width: 100%;
+	background: #95a5a7;
+}
+.content .contentLeft .systemConTop p{
+	height:40px;
+	line-height: 40px;
+	padding-left: 30px;
+	position: relative;
+}
+.content .contentLeft .systemConTop p font{
+	font-size: 16px;
+	color:#fff;
+}
+.content .contentLeft .systemConTop p i{
+	display: inline-block;
+	width: 14px;
+	height:13px;
+	background: url(../images/fc1.png) no-repeat 0 0;
+	margin-right: 5px;
+}
+.content .contentLeft .systemConTop p i:nth-of-type(2){
+	display: inline-block;
+	background: none;
+	width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #fff;
+    position: absolute;
+    right:-5px;
+    top:8px;
+}
+.content .contentLeft .systemConTop p span{
+	display: inline-block;
+	font-size:12px;
+	color:#fff;
+	position: absolute;
+	right:7%;
+	top:14px;
+}
+.systemConBot{
+	width: 100%;
+}
+.systemConBot>p{
+	padding-left: 50px;
+	position: relative;
+}
+.systemConBot>p>i{
+	display: inline-block;
+	width: 15px;
+	height: 13px;
+	margin-right: 5px;
+	background: url(../images/zcf.png) no-repeat 0 0;
+}
+.systemConBot>p>font{
+	color:#666;
+	font-size: 16px;
+	height:40px;
+	line-height: 40px;
+}
+.systemConBot>p>span{
+	display: inline-block;
+	font-size:12px;
+	color:#b1b3b3;
+	position: absolute;
+	right:7%;
+	top:14px;
+}
+.systemConBot>p>i.chanquan{
+	width: 16px;
+	height: 14px;
+	background: url(../images/cq.png) no-repeat 0 0;
+	top:13px;
+}
+.systemConBot>p>i.gong{
+	width: 14px;
+	height: 13px;
+	background: url(../images/gf.png) no-repeat 0 0;
+	top:13px;
+}
+.systemConBot>p>i.zujin{
+	width: 9px;
+	height: 15px;
+	background: url(../images/zj.png) no-repeat 0 0;
+	top:7px;
+}
+.systemConBot>p>i.fangchan{
+	width: 15px;
+	height: 14px;
+	background: url(../images/fw.png) no-repeat 0 0;
+	top:13px;
+}
+.systemConBot>p>i.jichu{
+	width: 14px;
+	height: 13px;
+	background: url(../images/jc.png) no-repeat 0 0;
+	top:13px;
+}
+.systemConBot>p>i.shezhi{
+	width: 14px;
+	height: 13px;
+	background: url(../images/gf.png) no-repeat 0 0;
+	top:13px;
+}
+.systemConBot>p>i.wang{
+	width: 16px;
+	height: 13px;
+	background: url(../images/wz.png) no-repeat 0 0;
+	top:13px;
+}
+
+.systemConBot>p>span.jc{
+	width: 10px;
+	height: 6px;
+	background: url(../images/jc2.png) no-repeat 0 0;
+	top:17px;
+}
+.jichuCon{
+	padding-left:22px;
+}
+.jichuCon font{
+	font-size: 16px;
+	color:#666;
+	height:34px;
+	line-height: 34px;
+}
+.jichuCon i{
+	display: inline-block;
+	margin-right: 5px;
+	width: 14px;
+	height: 13px;
+	background: url(../images/gf.png) no-repeat 0 0;
+}
+.jichuCon i.jichuCon-1{
+	background: url(../images/td.png) no-repeat 0 0;
+}
+.jichuCon i.jichuCon-9{
+	width: 13px;
+	height: 12px;
+	background: url(../images/dt.png) no-repeat 0 0;
+}
+
+
+.jichuInfo{
+	padding-left: 50px;
+}
+.jichuInfo .jichuTit{
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+}
+.jichuInfo .jichuTit font{
+	font-size: 16px;
+	color:#666;
+}
+.jichuInfo .jichuTit i{
+	display: inline-block;
+	margin-right: 5px;
+	width: 14px;
+	height: 13px;
+	background: url(../images/jc.png) no-repeat 0 0;
+}
+.jichuInfo .jichuTit font{
+	color:#27a79b;
+}
+.jichuInfo .jichuTit span{
+	display: inline-block;
+	font-size:12px;
+	color:#b1b3b3;
+	position: absolute;
+	top:14px;
+	right: 7%;
+}
+.content .contentRight{
+	width:78%;
+	float:left;
+}
+.content .contentRight .contentRightTop{
+	border:solid #ddd 1px;
+	height:40px;
+	line-height: 40px;
+}
+.content .contentRight .contentRightTop span{
+	display: inline-block;
+	width:85px;
+	text-align: center;
+	float: left;
+}
+.content .contentRight .contentRightTop ul{
+	float: left;
+}
+.content .contentRight .contentRightTop li{
+	float:left;
+	color:#3074af;
+	padding:0 10px;
+}
+.content .contentRight .contentRightMid{
+	border-bottom: solid #ddd 1px;
+	margin:20px 0;
+	height:40px;
+	line-height: 40px;
+}
+.content .contentRight .contentRightMid span{
+	float:left;
+}
+.content .contentRight .contentRightMid p{
+	float:right;
+	width:108px;
+	height: 40px;
+	border: solid #ddd 1px;
+	border-bottom: none;
+}
+.content .contentRight .contentRightMid p i{
+	display: inline-block;
+	width:19px;
+	height:15px;
+	background: url(../images/icon_btn.png) no-repeat 0 center;
+	vertical-align: middle;
+	margin-right: 3px;
+	margin-top: -4px;
+	margin-left:5px;
+}
+.content .contentRight .contentRightMid p font{
+	color:#27a79b;
+	font-size: 12px;
+}
+.contentRightBotTit{
+	height:29px;
+	line-height: 29px;
+}
+.contentRightBotTit>span{
+	float:left;
+	font-size: 12px;
+	color:#222;
+}
+.contentRightBotTit .contentRightBotTitSx{
+	float:right;
+	height:27px;
+}
+.contentRightBotTit .contentRightBotTitSx .sx{
+	float:left;
+	width:60px;
+	height:27px;
+	margin-right: 7px;
+}
+.contentRightBotTit .contentRightBotTitSx .sx .btn{
+	padding: 2px 9px 1px 9px;
+	margin-left: 0px;
+}
+.contentRightBotTit .contentRightBotTitSx .sx .btn i{
+	margin-right: 3px;
+	font-size:12px;
+	color:#666;
+}
+.contentRightBotTit .contentRightBotTitSx .gj{
+	float:right;
+	width:75px;
+	height:27px;
+	text-align: center;
+}
+.dropdown-menu{
+	font-size:12px;
+	min-width: 75px;
+}
+.dropdown-menu li a{
+	padding:0 20px;
+}
+
+.contentRightBotTit .contentRightBotTitSx .gj .gjCon{
+	padding: 3px 6px;
+	font-size:12px;
+	color:#333;
+}
+.contentRightBotTit .contentRightBotTitSx .gj .gjCon i{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top:-2px;
+	font-size:12px;
+	color:#a9a9a9;
+	margin-right: 3px;
+}
+.thead{
+	width:100%;
+	margin:20px 0 0;
+	border:solid #dde4e8 1px;
+	height:35px;
+	line-height: 35px;
+	background: #f5f7fb;
+}
+
+
+.thead td{
+	font-size: 14px;
+	color:#222;
+	border-bottom:solid #000000 1px;
+	position: relative;
+}
+.thead td .checkbox{
+	margin-top:0px;
+	margin-bottom: 0px;
+}
+.thead td span{
+	display: inline-block;
+	width:19px;
+	height:19px;
+	background: url(../images/sort_both.png) no-repeat right center;
+	position: absolute;
+	right:0px;
+	top:10px;
+}
+
+.tableInfo{
+	width:100%;
+	border-collapse: collapse;
+}
+
+.tableInfo td{
+	color:#222;
+}
+.tableInfo td .checkbox{
+	margin-top:0px;
+	margin-bottom: 0px;
+}
+.tableInfo td .checkbox label{
+	color:#3074af;
+}
+.tableInfo td span{
+	color:#222;
+	font-size: 14px;
+}
+.tableInfo td.cz{
+	text-align: left;
+}
+.tableInfo td a{
+	color:#3074af;
+	text-decoration: none;
+	padding:0 4px;
+}
+.tableInfo td span.blue{
+	color:#3074af;
+}
+.tableInfo td span.red{
+	color:#fb0a09;
+}
+.tableInfo td span.green{
+	color:#128812;
+}

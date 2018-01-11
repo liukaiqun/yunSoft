@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/2.css"/>
+	<link rel="stylesheet" href="css/bootstrapSwitch.css">
+
+	<link rel="stylesheet" href="css/bootstrap2.min.css">
+	<link rel="stylesheet" href="css/datetimepicker2.css">
+
+
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<title>2和3</title>
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5.js"></script>
+    <![endif]-->
+    <!-- Le fav and touch icons -->
+</head>
+<body>
+	<div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+	    <ul id="myTabs" class="nav nav-tabs" role="tablist">
+	      <li role="presentation" class="active"><a href="#info" id="info-tab" role="tab" data-toggle="tab" aria-controls="info" aria-expanded="false">楼宇基本信息</a></li>
+	      <li role="presentation" class=""><a href="#houseList" role="tab" id="houseList-tab" data-toggle="tab" aria-controls="houseList" aria-expanded="true">公房列表</a></li>
+	      <li role="presentation" class=""><a href="#detail" id="detail-tab" role="tab" data-toggle="tab" aria-controls="detail" aria-expanded="false">资产明细</a></li>
+	      <li role="presentation" class=""><a href="#map" role="tab" id="map-tab" data-toggle="tab" aria-controls="map" aria-expanded="true">地图位置</a></li>
+	      <li role="presentation" class=""><a href="#floor" id="floor-tab" role="tab" data-toggle="tab" aria-controls="floor" aria-expanded="false">楼层平面图</a></li>
+	    </ul>
+	    <div id="myTabContent" class="tab-content">
+	      <div role="tabpanel" class="tab-pane fade active in" id="info" aria-labelledby="info-tab">
+	        <div class="flInfo">
+	        	<div class="flInfoTit"><span>基本信息</span></div>
+	        	<div class="flInfoBut">
+					<button type="button" class=""><span class="glyphicon glyphicon-ok"></span>保存</button>
+					<div class="clear"></div>
+	        	</div>
+	        	<div class="flInfoCon">
+					<div class="flInfoConList">
+
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="lymc" class="col-sm-2 control-label flLabel "><span>*</span>楼宇名称</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="lymc" placeholder="第二实验楼A">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="lybm" class="col-sm-2 control-label flLabel "><span></span>楼宇别名</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="lybm" placeholder="">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="xq" class="col-sm-2 control-label flLabel "><span>*</span>校区</label>
+							    <div class="col-sm-10 flInput">
+							      	<select class="form-control" id="xq">
+							      		<option>江安1</option>
+							      		<option>江安2</option>
+							      		<option>江安3</option>
+							      		<option>江安4</option>
+							      		<option>江安5</option>
+							      	</select>
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="fgdw" class="col-sm-2 control-label flLabel "><span></span>分管单位</label>
+							    <div class="col-sm-10 flInput">
+							      <select class="form-control" id="fgdw">
+						      		<option>0101-物理基础实验教学中心</option>
+						      		<option>0102-物理基础实验教学中心</option>
+						      		<option>0103-物理基础实验教学中心</option>
+						          </select>
+						          <i ></i>
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="lylx" class="col-sm-2 control-label flLabel "><span>*</span>楼宇类型</label>
+							    <div class="col-sm-10 flInput">
+							      <select class="form-control" id="lylx">
+						      		<option>1-建筑物</option>
+						      		<option>2-建筑物</option>
+						      		<option>3-建筑物</option>
+						          </select>
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="ssjzw" class="col-sm-2 control-label flLabel "><span></span>所属建筑物</label>
+							    <div class="col-sm-10 flInput">
+							      <select class="form-control" id="ssjzw">
+						      		<option>所属建筑物1</option>
+						      		<option>所属建筑物2</option>
+						      		<option>所属建筑物3</option>
+						          </select>
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="syzk" class="col-sm-2 control-label flLabel "><span>*</span>使用状况</label>
+							    <div class="col-sm-10 flInput">
+							      <select class="form-control" id="syzk">
+						      		<option>1-在用</option>
+						      		<option>2-在用</option>
+						      		<option>3-在用</option>
+						          </select>
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="dscs" class="col-sm-2 control-label flLabel "><span>*</span>地上层数</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="dscs" placeholder="7">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="dxcs" class="col-sm-2 control-label flLabel "><span>*</span>地下层数</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="dxcs" placeholder="0">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="shzt" class="col-sm-2 control-label flLabel "><span>*</span>审核状态</label>
+							    <div class="col-sm-10 flInput">
+						          <div class="bs-docs-example">
+		                                <div class="switch" data-on-label="是" data-off-label="否">
+		                                    <input type="checkbox" checked />
+		                                </div>
+		                          </div>
+							      <a href="">？</a>
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="zlwz" class="col-sm-2 control-label flLabel "><span></span>坐落位置</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="zlwz" placeholder="">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText flInfoConListText2">
+							<div class="form-group">
+							    <label for="bz" class="col-sm-1 control-label flLabel "><span></span>备注</label>
+							    <div class="col-sm-11 flInput">
+							      <textarea class="form-control" rows="3" id="bz"></textarea>
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText flInfoConListText3">
+							<div class="form-group">
+							    <label for="lytp" class="col-sm-1 control-label flLabel "><span>*</span>楼宇图片</label>
+							    <div class="col-sm-4 flInput">
+							      <input type="file" class="" id="lytp">
+							      <div class="dwImg">
+							      	<div class="downloadImg"><span class="glyphicon glyphicon-picture"></span><font>上传图片</font></div>
+							        <div class="photoImg"><span class="glyphicon glyphicon-phone"></span><font>手机拍照</font></div>
+							      </div>
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText flInfoConListText3">
+							<div class="form-group">
+							    <label for="lytpc" class="col-sm-1 control-label flLabel "><span></span>楼宇图片C……</label>
+							    <div class="col-sm-4 flInput">
+							      <input type="file" class="" id="lytpc">
+							      <div class="dwImg">
+							      	<div class="downloadImg"><span class="glyphicon glyphicon-picture"></span><font>上传图片</font></div>
+							        <div class="photoImg"><span class="glyphicon glyphicon-phone"></span><font>手机拍照</font></div>
+							      </div>
+							    </div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					
+	        	</div>
+	        </div>
+	        
+	        <div class="flInfo">
+	        	<div class="flInfoTit"><span>建筑信息</span></div>
+	        	<div class="flInfoCon">
+					<div class="flInfoConList">
+
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="zdmj" class="col-sm-2 control-label flLabel "><span></span>占地面积</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="zdmj" placeholder="">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="jzmj" class="col-sm-2 control-label flLabel "><span></span>建筑面积</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="jzmj" placeholder="">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="symj" class="col-sm-2 control-label flLabel "><span></span>使用面积</label>
+							    <div class="col-sm-10 flInput">
+							      	<input type="text" class="form-control" id="symj" placeholder="">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="mjbl" class="col-sm-2 control-label flLabel "><span></span>面积比例</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="mjbl" placeholder="面积比例应该在0到1之间">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="dsmji" class="col-sm-2 control-label flLabel "><span></span>地上面积</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="dsmji" placeholder="">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="dxmji" class="col-sm-2 control-label flLabel "><span></span>地下面积</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="dxmji" placeholder="">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="jzjg" class="col-sm-2 control-label flLabel "><span></span>建筑结构</label>
+							    <div class="col-sm-10 flInput">
+							      <select class="form-control" id="jzjg">
+						      		<option>1-建筑结构</option>
+						      		<option>2-建筑结构</option>
+						      		<option>3-建筑结构</option>
+						          </select>
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="sgdw" class="col-sm-2 control-label flLabel "><span></span>施工单位</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="sgdw" placeholder="7">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="jgrq" class="col-sm-2 control-label flLabel "><span></span>竣工日期</label>
+							    <div class="col-sm-10 flInput">
+
+						          <div class="input-append date form_datetime dateTime3" id="form_datetime">
+						              <input size="16" type="text" value="" readonly>
+						              <span class="add-on"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
+						          </div>
+
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="trsyq" class="col-sm-2 control-label flLabel "><span></span>投入试用期</label>
+							    <div class="col-sm-10 flInput">
+
+  						          <div class="input-append date form_datetime dateTime3">
+  						              <input size="16" type="text" value="" readonly>
+  						              <span class="add-on"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
+  						          </div>
+
+							    </div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					
+	        	</div>
+	        </div>
+	        
+	        <div class="flInfo">
+	        	<div class="flInfoTit"><span>产权信息</span></div>
+	        	<div class="flInfoCon">
+					<div class="flInfoConList">
+
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="zcrz" class="col-sm-2 control-label flLabel "><span></span>资产入账</label>
+							    <div class="col-sm-10 flInput">
+					              <div class="bs-docs-example">
+			                          <div class="switch" data-on-label="已入" data-off-label="未入">
+			                              <input type="checkbox" checked />
+			                          </div>
+			                      </div>
+							      <a href="">？</a>
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="qdfs" class="col-sm-2 control-label flLabel "><span></span>取得方式</label>
+							    <div class="col-sm-10 flInput">
+							      <select class="form-control" id="qdfs">
+						      		<option>1-取得方式</option>
+						      		<option>2-取得方式</option>
+						      		<option>3-取得方式</option>
+						          </select>
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="qdrq" class="col-sm-2 control-label flLabel "><span></span>取得日期</label>
+							    <div class="col-sm-10 flInput">
+
+						            <div class="input-append date form_datetime dateTime3">
+						                <input size="16" type="text" value="" readonly>
+						                <span class="add-on"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
+						            </div>
+
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="cqxs" class="col-sm-2 control-label flLabel "><span></span>产权形式</label>
+							    <div class="col-sm-10 flInput">
+							       <select class="form-control" id="cqxs">
+						      		<option>1-产权形式</option>
+						      		<option>2-产权形式</option>
+						      		<option>3-产权形式</option>
+						          </select>
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="cqly" class="col-sm-2 control-label flLabel "><span></span>产权来源</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="cqly" placeholder="">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="syqr" class="col-sm-2 control-label flLabel "><span></span>所有权人</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="syqr" placeholder="">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="fzrq" class="col-sm-2 control-label flLabel "><span></span>发证日期</label>
+							    <div class="col-sm-10 flInput">
+
+						          <div class="input-append date form_datetime dateTime3">
+						              <input size="16" type="text" value="" readonly>
+						              <span class="add-on"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
+						          </div>
+
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="fzjg" class="col-sm-2 control-label flLabel "><span></span>发证机关</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="fzjg" placeholder="">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="zshm" class="col-sm-2 control-label flLabel "><span></span>证书号码</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="zshm" placeholder="">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="qh" class="col-sm-2 control-label flLabel "><span></span>丘号</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="qh" placeholder="0">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="qsxz" class="col-sm-2 control-label flLabel "><span></span>权属性质</label>
+							    <div class="col-sm-10 flInput">
+							      <select class="form-control" id="qsxz">
+						      		<option>1-权属性质</option>
+						      		<option>2-权属性质</option>
+						      		<option>3-权属性质</option>
+						          </select>
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="qszm" class="col-sm-2 control-label flLabel "><span></span>权属证明</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="qszm" placeholder="">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="qszh" class="col-sm-2 control-label flLabel "><span></span>权属证号</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="qszh" placeholder="">
+							    </div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					
+	        	</div>
+	        </div>
+	        
+	        <div class="flInfo">
+	        	<div class="flInfoTit"><span>设备及维护</span></div>
+	        	<div class="flInfoCon">
+					<div class="flInfoConList">
+
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="rfgc" class="col-sm-2 control-label flLabel "><span></span>人防工程</label>
+							    <div class="col-sm-10 flInput">
+
+					              <div class="bs-docs-example">
+			                          <div class="switch" data-on-label="有" data-off-label="无">
+			                              <input type="checkbox" checked />
+			                          </div>
+			                      </div>
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="rfmj" class="col-sm-2 control-label flLabel "><span></span>人防面积</label>
+							    <div class="col-sm-10 flInput">
+							      <input type="text" class="form-control" id="rfmj" placeholder="">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="gnmj" class="col-sm-2 control-label flLabel "><span></span>供暖面积</label>
+							    <div class="col-sm-10 flInput">
+							      	<input type="text" class="form-control" id="gnmj" placeholder="">
+							    </div>
+							</div>
+						</div>
+						<div class="flInfoConListText">
+							<div class="form-group">
+							    <label for="dt" class="col-sm-2 control-label flLabel "><span></span>是否有电梯</label>
+							    <div class="col-sm-10 flInput">
+			       		            <div class="bs-docs-example">
+		                               <div class="switch" data-on-label="是" data-off-label="否">
+		                                   <input type="checkbox" checked />
+		                               </div>
+		                           </div>
+							    </div>
+
+	        		            
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					
+	        	</div>
+	        </div>
+	        
+	      </div>
+	      <div role="tabpanel" class="tab-pane fade" id="houseList" aria-labelledby="houseList-tab">
+	        <p>公房列表公房列表公房列表公房列表公房列表公房列表公房列表公房列表公房列表公房列表公房列表</p>
+	      </div>
+
+	      <div role="tabpanel" class="tab-pane fade" id="detail" aria-labelledby="detail-tab">
+	        <p>资产明细资产明细资产明细资产明细资产明细资产明细资产明细资产明细资产明细资产明细资产明细</p>
+	      </div>
+	      <div role="tabpanel" class="tab-pane fade" id="map" aria-labelledby="map-tab">
+	        <p>地图位置地图位置地图位置地图位置地图位置地图位置地图位置地图位置地图位置地图位置地图位置地图位置地图位置</p>
+	      </div>
+
+	      <div role="tabpanel" class="tab-pane fade" id="floor" aria-labelledby="floor-tab">
+	        <p>楼层平面图楼层平面图楼层平面图楼层平面图楼层平面图楼层平面图楼层平面图楼层平面图楼层平面图楼层平面图</p>
+	      </div>
+	     
+	    </div>
+	  </div>
+	  <script src="js/bootstrapSwitch.js"></script>
+	  <script src="js/bootstrap-datetimepicker.min.js"></script>
+
+	   <script type="text/javascript">
+	       $(".form_datetime").datetimepicker({
+	           format: "dd MM yyyy - hh:ii",
+	           autoclose: true,
+	           todayBtn: true,
+	           pickerPosition: "bottom-left"
+	       });
+	   </script> 
+   
+</body>
+</html>

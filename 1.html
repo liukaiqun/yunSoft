@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>1</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/1.css"/>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5.js"></script>
+    <![endif]-->
+    <!-- Le fav and touch icons -->
+</head>
+<body>
+	<!--head-->
+	<div class="header">
+		<div class="headerCon">
+			<div class="headerLeft">
+				<div class="headerLeftLogo">
+					<img src="images/logo (1).png" alt="" />
+				</div>
+				<div class="headerLeftHome">
+					<i></i><span>用户首页</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="headerRight">
+				<div class="headerRightYewu">
+					<i></i>
+					<font>业务概览</font>
+					<span></span>
+				</div>
+				<ul class="headerRightNav">
+					<li><i class="icon-shenhe"></i><span>待审</span>
+						<font>7</font>
+					</li>
+					<li><i class="icon-weixin"></i><span>微信</span></li>
+					<li><i class="icon-help"></i><span>帮助中心</span></li>
+					<li><i class="icon-info"></i><span>消息</span></li>
+					<li><i class="icon-tui"></i><span>退出</span></li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<!--content-->
+	<div class="content">
+		<div class="contentLeft">
+			<!--<div class="system">-->
+				<p class="system" id="system"><span>资产管理系统</span> <i class="glyphicon glyphicon-menu-left"></i></p>
+				<div class="systemCon">
+					<div class="systemConTop">
+						<p><i></i><font>房产管理系统</font><span class="glyphicon glyphicon-menu-down"></span><i></i></p>
+					</div>
+					<div class="systemConBot">
+						<p><i></i><font>周转房管理</font><span class="glyphicon glyphicon-menu-left"></span></p>
+						<p><i class="chanquan"></i><font>产权住宅管理</font></p>
+						<p><i class="gong"></i><font>公房分配管理</font><span  class="glyphicon glyphicon-menu-left"></span></p>
+						<p><i class="zujin"></i><font>租金管理</font></p>
+						<p><i class="fangchan"></i><font>房产维修管理</font><span  class="glyphicon glyphicon-menu-left"></span></p>
+						<div class="jichuInfo">
+							<div class="jichuTit">
+								<i class="jichu"></i><font>基础数据管理</font><span class="glyphicon glyphicon-menu-down"></span>
+							</div>
+							
+							<div class="jichuCon">
+								<p><i class="jichuCon-1"></i><font>土地管理</font></p>
+								<p><i class="jichuCon-2"></i><font>园区管理</font></p>
+								<p><i class="jichuCon-3"></i><font>楼宇管理</font></p>
+								<p><i class="jichuCon-4"></i><font>楼宇管理</font></p>
+								<p><i class="jichuCon-5"></i><font>公房信息管理</font></p>
+								<p><i class="jichuCon-6"></i><font>公房变动审核</font></p>
+								<p><i class="jichuCon-7"></i><font>住房信息管理</font></p>
+								<p><i class="jichuCon-8"></i><font>住房变动审核</font></p>
+								<p><i class="jichuCon-9"></i><font>地图模式</font></p>
+							</div>
+						</div>
+						<p><i class="shezhi"></i><font>设置与维护</font><span  class="glyphicon glyphicon-menu-left"></span></p>
+						<p><i class="wang"></i><font>网站管理</font></p>
+					</div>
+				</div>
+			<!--</div>-->
+		</div>
+		<div class="contentRight">
+			<div class="contentRightTop">
+				<span>审核状态</span>
+				<ul class="contentRightTopList">
+					<li>待审</li>
+					<li>通过</li>
+					<li>驳回</li>
+					<li>撤回</li>
+					<li>已过期</li>
+					<li>已放弃</li>
+					<li>已终止协议</li>
+					<div class="clear"></div>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="contentRightMid">
+				<span>教师申请列表</span>
+				<p><i></i><font>教师申请列表</font></p>
+				<div class="clear"></div>
+			</div>
+			<div class="contentRightBot">
+				<div class="contentRightBotTit">
+					<span>1~50/共74条</span>
+					<div class="contentRightBotTitSx">
+						<div class="sx">
+							<!-- <i class="glyphicon glyphicon-refresh"></i><span>刷新</span> -->
+
+							<div class="input-group">
+					          <div class="input-group-btn">
+					            <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i>刷新</button>
+					          </div>
+					        </div>
+						</div>
+						<div class="gj">
+							<div class="input-group">
+					          <div class="input-group-btn">
+					            <button type="button" class="btn btn-default gjCon"><i class="glyphicon glyphicon-wrench"></i>工具</button>
+					            <button type="button" class="btn btn-default dropdown-toggle gjCon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					              <span class="caret"></span>
+					              <span class="sr-only">Toggle Dropdown</span>
+					            </button>
+					            <ul class="dropdown-menu">
+					              <li><a href="#">工具1</a></li>
+					              <li role="separator" class="divider"></li>
+					              <li><a href="#">工具2</a></li>
+					              <li role="separator" class="divider"></li>
+					              <li><a href="#">工具3</a></li>
+					              <li role="separator" class="divider"></li>
+					              <li><a href="#">工具4</a></li>
+					            </ul>
+					          </div>
+					        </div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				<table class="thead table">
+					<tr>
+						<td width="11%">
+							<div class="checkbox">
+							    <label>
+							        <input type="checkbox"> 教师编号
+							    </label>
+							</div>
+						</td>
+						<td width="8%">教师姓名<span></span></td>
+						<td width="10%">所属单位<span></span></td>
+						<td width="8%">入校时间<span></span></td>
+						<td width="8%">婚姻状况<span></span></td>
+						<td width="8%">是双职工<span></span></td>
+						<td width="9%">提交时间<span></span></td>
+						<td width="8%">审核状态<span></span></td>
+						<td width="8%">教师类别<span></span></td>
+						<td width="9%">选房资格<span></span></td>
+						<td width="13%">操作</td>
+					</tr>
+				</table>
+				<table class="tableInfo table table-striped table-hover">
+					<tr>
+						<td width="11%">
+						<!-- <input type="checkbox" /><span class="blue">20162252</span> -->
+							<div class="checkbox">
+							    <label>
+							        <input type="checkbox"> 20162252
+							    </label>
+							</div>
+						</td>
+						<td width="8%"><span class="blue">孙伟杰</span></td>
+						<td width="10%"><span>研究所</span></td>
+						<td width="8%"><span></span></td>
+						<td width="8%"><span>已婚</span></td>
+						<td width="8%"><span class="red">否</span></td>
+						<td width="9%"><span>2016-11-01 10：00</span></td>
+						<td width="8%"><span>待审</span></td>
+						<td width="8%"><span></span></td>
+						<td width="9%"><span>未选房</span></td>
+						<td width="13%" class="cz"><span><a href="">审批</a></span></td>
+					</tr>
+					<tr>
+						<td><!-- <input type="checkbox" /> -->
+							<!-- <span class="blue">20162233</span> -->
+							<div class="checkbox">
+							    <label>
+							        <input type="checkbox"> 20162233
+							    </label>
+							</div>
+						</td>
+						<td><span class="blue">杨丽萍</span></td>
+						<td><span>其他单位</span></td>
+						<td><span></span></td>
+						<td><span>已婚</span></td>
+						<td><span class="red">否</span></td>
+						<td><span>2016-10-31 14：55</span></td>
+						<td><span class="green">通过</span></td>
+						<td><span>博士已婚</span></td>
+						<td><span>未选房</span></td>
+						<td class="cz"><span><a href="">详情</a>|<a href="">修改</a>|<a href="">取消资格</a></span></td>
+					</tr>
+					<tr>
+						<td>
+							<!-- <input type="checkbox" /><span class="blue">20162250</span> -->
+							<div class="checkbox">
+							    <label>
+							        <input type="checkbox"> 20162250
+							    </label>
+							</div>
+						</td>
+						<td><span class="blue">何家亮</span></td>
+						<td><span>数学学院</span></td>
+						<td><span></span></td>
+						<td><span>未婚</span></td>
+						<td><span class="red">否</span></td>
+						<td><span>2016-10-31 10：55</span></td>
+						<td><span class="green">通过</span></td>
+						<td><span>博士未婚</span></td>
+						<td><span>已选房</span></td>
+						<td class="cz"><span ><a href="">详情</a></span></td>
+					</tr>
+					<tr>
+						<td>
+							<!-- <input type="checkbox" /><span class="blue">20162251</span> -->
+							<div class="checkbox">
+							    <label>
+							        <input type="checkbox"> 20162251
+							    </label>
+							</div>
+						</td>
+						<td><span class="blue">甘芳吉</span></td>
+						<td><span>制造科学与工程学院</span></td>
+						<td><span></span></td>
+						<td><span>已婚</span></td>
+						<td><span class="red">否</span></td>
+						<td><span>2016-10-31 10：00</span></td>
+						<td><span class="green">通过</span></td>
+						<td><span>博士已婚</span></td>
+						<td><span>已选房</span></td>
+						<td class="cz"><span><a href="">详情</a></span></td>
+					</tr>
+					<tr>
+						<td>
+							<!-- <input type="checkbox" /><span class="blue">20162061</span> -->
+							<div class="checkbox">
+							    <label>
+							        <input type="checkbox"> 20162061
+							    </label>
+							</div>
+						</td>
+						<td><span class="blue">韦仁忠</span></td>
+						<td><span>西部开发研究院</span></td>
+						<td><span></span></td>
+						<td><span>未婚</span></td>
+						<td><span class="red">否</span></td>
+						<td><span>2016-10-28 15：08</span></td>
+						<td><span class="green">通过</span></td>
+						<td><span>博士未婚</span></td>
+						<td><span>未选房</span></td>
+						<td class="cz"><span><a href="">详情</a>|<a href="">修改</a>|<a href="">取消资格</a></span></td>
+					</tr>
+					<tr>
+						<td>
+							<!-- <input type="checkbox" /><span class="blue">20162241</span> -->
+							<div class="checkbox">
+							    <label>
+							        <input type="checkbox"> 20162241
+							    </label>
+							</div>
+						</td>
+						<td><span class="blue">陈希丰</span></td>
+						<td><span>四川大学文化科技协同创新研发中心</span></td>
+						<td><span></span></td>
+						<td><span>已婚</span></td>
+						<td><span class="red">否</span></td>
+						<td><span>2016-10-28 14：33</span></td>
+						<td><span class="green">通过</span></td>
+						<td><span>博士已婚</span></td>
+						<td><span>未选房</span></td>
+						<td class="cz"><span><a href="">详情</a>|<a href="">修改</a>|<a href="">取消资格</a></span></td>
+					</tr>
+					<tr>
+						<td>
+							<!-- <input type="checkbox" /><span class="blue">83142099</span> -->
+							<div class="checkbox">
+							    <label>
+							        <input type="checkbox"> 83142099
+							    </label>
+							</div>
+						</td>
+						<td><span class="blue">Neil K.Brewster</span></td>
+						<td><span>外国语学院</span></td>
+						<td><span></span></td>
+						<td><span>已婚</span></td>
+						<td><span class="red">否</span></td>
+						<td><span>2016-11-10 17：22</span></td>
+						<td><span>已终止协议</span></td>
+						<td><span>博士已婚</span></td>
+						<td><span>未选房</span></td>
+						<td class="cz"><span><a href="">详情</a>|<a href="">修改</a>|<a href="">取消资格</a></span></td>
+					</tr>
+					<tr>
+						<td>
+							<!-- <input type="checkbox" /><span class="blue">20162232</span> -->
+							<div class="checkbox">
+							    <label>
+							        <input type="checkbox"> 20162232
+							    </label>
+							</div>
+						</td>
+						<td><span class="blue">孙英英</span></td>
+						<td><span>灾后重建与管理学院</span></td>
+						<td><span></span></td>
+						<td><span>未婚</span></td>
+						<td><span class="red">否</span></td>
+						<td><span>2016-10-08 15：08</span></td>
+						<td><span>已终止协议</span></td>
+						<td><span>博士未婚</span></td>
+						<td><span>未选房</span></td>
+						<td class="cz"><span><a href="">详情</a>|<a href="">修改</a>|<a href="">取消资格</a></span></td>
+					</tr>
+					<tr>
+						<td>
+							<!-- <input type="checkbox" /><span class="blue">20142192</span> -->
+							<div class="checkbox">
+							    <label>
+							        <input type="checkbox"> 20142192
+							    </label>
+							</div>
+						</td>
+						<td><span class="blue">包睿莹</span></td>
+						<td><span>高分子科学与</span></td>
+						<td><span></span></td>
+						<td><span>已婚</span></td>
+						<td><span class="red">否</span></td>
+						<td><span>2016-10-08 10：00</span></td>
+						<td><span class="green">通过</span></td>
+						<td><span>博士已婚</span></td>
+						<td><span>已选房</span></td>
+						<td class="cz"><span><a href="">详情</a></span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</body>
+<script type="text/javascript" src="js/index.js" ></script>
+</html>
